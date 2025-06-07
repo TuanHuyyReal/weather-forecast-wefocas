@@ -93,11 +93,7 @@ function displayWeatherDataNextDays(data) {
   data.list.forEach((item) => {
     if (
       item.dt_txt.split(" ")[1] ==
-      `${
-        new Date().getHours() < 10
-          ? `0${new Date().getHours()}`
-          : new Date().getHours()
-      }:00:00`
+      `12:00:00`
     ) {
       nextDaysInfo.innerHTML += `
     <div class="day">
