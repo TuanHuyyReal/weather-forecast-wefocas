@@ -91,10 +91,7 @@ function displayWeatherDataNextDays(data) {
     <h1>Next 5 days in ${data.city.name}</h1>
   `;
   data.list.forEach((item) => {
-    if (
-      item.dt_txt.split(" ")[1] ==
-      `12:00:00`
-    ) {
+    if (item.dt_txt.split(" ")[1] == `12:00:00`) {
       nextDaysInfo.innerHTML += `
     <div class="day">
       <span class="date">${item.dt_txt}</span>
